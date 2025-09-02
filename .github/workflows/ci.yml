@@ -35,10 +35,10 @@ jobs:
       run: uv run ruff format --check .
     
     - name: Run type checker
-      run: uv run invoke type_check
+      run: uv run invoke type-check
     
     - name: Run tests
       run: uv run invoke test
     
     - name: Run tests with coverage
-      run: uv run invoke test_coverage
+      run: uv run invoke test-coverage
